@@ -13,7 +13,13 @@ mvn clean install spring-boot:run
 http://localhost:8080/swagger-ui.html
 ```
 
-## Create new User
+### Application home page
+```
+http://localhost:8080/
+```
+
+
+## Create new User from rest client
 ```
 curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \
    "firstName": "Jagadeesh" \
@@ -24,7 +30,7 @@ curl -X POST --header 'Content-Type: application/json' --header 'Accept: applica
 
 
 
-### Get All the users
+### Get All the users from rest client
 ```
 curl -X GET --header 'Accept: application/json' 'http://localhost:8080/users'
 ```
